@@ -9,4 +9,10 @@ utils.fetchRoot = function(gameId:string)
     return utils.fetchModule(gameId, "_")
 end
 
+utils.printTable = function(table:table)
+    for i, elmnt in ipairs(table) do
+        print(i .. ") " .. elmnt)
+    end
+end
+
 return utils

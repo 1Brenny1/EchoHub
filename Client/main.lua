@@ -5,5 +5,5 @@ end
 local utils = _require("utils")
 
 local root = utils.fetchRoot("_")
-print(root)
-print(utils.fetchModule("_", root[1]))
+print(utils.printTable(root))
+print(utils.printTable(utils.fetchModule("_", root[1])))
